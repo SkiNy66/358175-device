@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Илья Тимченко](https://up.htmlacademy.ru/htmlcss/17/user/358175).
-* Наставник: `Алексей Гурьев`.
+* Наставник: []Алексей Гурьев](https://htmlacademy.ru/profile/danakishi).
 
 ---
 
