@@ -5,8 +5,189 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <div class="index-logo">
+          <img src="http://placehold.it/300x100" width="300" height="100" alt="">
+        </div>
+        <div class="search">
+          <input type="text" name="search" value="" placeholder="Поиск по сайту">
+          <button class="btn" type="submit" hidden="true">Отправить</button>
+        </div>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="items-block">
+          <a class="compare" href="#">СРАВНИТЬ</a>
+          <a class="basket" href="#">КОРЗИНА</a>
+        </div>
+        <div class="catalog">
+          <a href="#">КАТАЛОГ ТОВАРОВ</a>
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">ДОСТАВКА</a>
+            </li>
+            <li>
+              <a href="#">ГАРАНТИЯ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="slider">
+      <article class="slider-item">
+        <img src="http://placehold.it/400x400" width="400" height="400" alt="">
+        <b>
+          Делай селфи,<br>
+          как БенСтиллер!
+        </b>
+        <p class="item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)метров длиной и весом всего 5 килограмм.</p>
+        <a href="#">ПОДРОБНЕЕ</a>
+        <ul class="slider-item-list">
+          <li>
+            <a class="active" href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+        <div class="characteristics">
+          <div class="characteristics-lenght">
+            <b>8,5 м</b>
+            <p>Длина палки</p>
+          </div>
+          <div class="characteristics-weight">
+            <b>5 кг</b>
+            <p>Вес палки</p>
+          </div>
+          <div class="characteristics-material">
+            <b>Карбон</b>
+            <p>Материал</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="catalog-list">
+      <div class="catalog-list-item">
+        <a href="#">Виртуальная реальность</a>
+      </div>
+      <div class="catalog-list-item">
+        <a href="#">Моноподы для селфи</a>
+      </div>
+      <div class="catalog-list-item">
+        <a href="#">Экшн-камеры</a>
+      </div>
+      <div class="catalog-list-item">
+        <a href="#">Фитнесс браслеты</a>
+      </div>
+      <div class="catalog-list-item">
+        <a href="#">Умные часы</a>
+      </div>
+      <div class="catalog-list-item">
+        <a href="#">Квадрокоптеры</a>
+      </div>
+    </section>
+    <section class="second-nav">
+      <div class="second-nav-menu">
+        <ul>
+          <li>
+            <a href="#">ДОСТАВКА</a>
+          </li>
+          <li>
+            <a href="#">ГАРАНТИЯ</a>
+          </li>
+          <li>
+            <a href="#">КРЕДИТ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="second-nav-content">
+        <h2>ДОСТАВКА</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="partners-logo">
+        <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+      </div>
+      <div class="partners-logo">
+        <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+      </div>
+      <div class="partners-logo">
+        <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+      </div>
+      <div class="partners-logo">
+        <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+      </div>
+    </section>
+    <section class="company">
+      <div class="company-about">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+        <p>Мы можем доставить ваш товар в самые отдаленныеточки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="company-about-list">
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#">Подробнее о нас</a>
+      </div>
+      <div class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможетепроверить работоспособность покупки. Всякое бывает.</p>
+      </div>
+      <img src="img/http://placehold.it/300x300" width="300" height="300" alt="">
+      <a href="#">Напишите нам</a>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="http://placehold.it/300x100" width="300" height="100" alt="">
+        </div>
+        <div class="footer-user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="footer-items-block">
+          <a class="compare" href="#">СРАВНИТЬ</a>
+          <a class="basket" href="#">КОРЗИНА</a>
+        </div>
+        <section class="footer-address">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+        </section>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="#">ДОСТАВКА</a>
+            </li>
+            <li>
+              <a href="#">ГАРАНТИЯ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="footer-phone">
+          Тел.: +7 (495) 495-95-95
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        </section>
+        <section class="footer-small-logo">
+          <img src="http://placehold.it/75x75" width="75" height="75" alt="">
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
