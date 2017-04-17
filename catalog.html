@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-logo">
+          <img src="http://placehold.it/300x100" width="300" height="100" alt="">
+        </div>
+        <div class="header-search">
+          <input type="text" name="search" value="" placeholder="Поиск по сайту">
+          <button class="btn" type="submit" hidden="true">Отправить</button>
+        </div>
+        <div class="header-user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="header-items-block">
+          <a class="compare" href="#">СРАВНИТЬ</a>
+          <a class="basket" href="#">КОРЗИНА</a>
+        </div>
+        <div class="header-catalog">
+          <a href="#">КАТАЛОГ ТОВАРОВ</a>
+        </div>
+        <nav class="header-main-navigation">
+          <ul>
+            <li>
+              <a href="#">ДОСТАВКА</a>
+            </li>
+            <li>
+              <a href="#">ГАРАНТИЯ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Моноподы для селфи</h1>
+      <ul class="breadcrumb">
+        <li><a href="#">ГЛАВНАЯ</a></li>
+        <li><a href="#">МАГАЗИН</a></li>
+        <li>СРЕДСТВА ДЛЯ УХОДА</li>
+      </ul>
+      <section class="filter">
+        <div class="filter-value">
+          <p>Стоимость:</p>
+          <input type="range" min="0" max="5000" step="1000" value="2000">
+        </div>
+        <div class="filter-colour">
+          <p>Цвет:</p>
+          <input type="checkbox" name="black" id="black" checked>
+          <label for="black">Черный</label>
+          <input type="checkbox" name="white" id="white">
+          <label for="white">Белый</label>
+          <input type="checkbox" name="blue" id="blue" checked>
+          <label for="blue">Синий</label>
+          <input type="checkbox" name="red" id="red" checked>
+          <label for="red">Красный</label>
+          <input type="checkbox" name="pink" id="pink">
+          <label for="pink">Розовый</label>
+        </div>
+        <div class="filter-bluetooth">
+          <label for="bluetooth-true">Есть</label>
+          <input type="radio" name="bluetooth" value="bluetooth-true" id="bluetooth-true" checked>
+          <label for="brown-accessories">Нет</label>
+          <input type="radio" name="bluetooth" value="bluetooth-false" id="bluetooth-false">
+        </div>          
+      </section>
+      <section class="gallery">
+        <div class="gallery-sorting">
+          <p>СОРТИРОВКА:</p>
+          <button class="btn btn-sort" type="button">По цене</button>
+          <button class="btn btn-sort" type="button">По типу</button>
+          <button class="btn btn-sort" type="button">По популярности</button>
+          <button class="btn btn-sort" type="button">Вверх</button>
+          <button class="btn btn-sort" type="button">Вниз</button>
+        </div>
+        <div class="gallery-item">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+          <a href="#">Любительская селфи-палка</a>
+          <span>500 руб.</span>
+        </div>
+        <div class="gallery-item">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+          <a href="#">Профессиональная селфи-палка</a>
+          <span>1 500 руб.</span>
+        </div>
+        <div class="gallery-item">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+          <a href="#">Непотопляемая селфи-палка</a>
+          <span>2 500 руб.</span>
+        </div>
+        <div class="gallery-item">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="">
+          <a href="#">Селфи-палка «Следуй за мной»</a>
+          <span>4 900 руб.</span>
+        </div>
+        <div class="gallery-pagination">
+          <button class="btn btn-pagination" type="button">Назад</button>
+          <ul class="pagination-list">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <button class="btn btn-pagination" type="button">Вперед</button>
+        </div>
+      </section>     
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="http://placehold.it/300x100" width="300" height="100" alt="">
+        </div>
+        <div class="footer-user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="footer-items-block">
+          <a class="compare" href="#">СРАВНИТЬ</a>
+          <a class="basket" href="#">КОРЗИНА</a>
+        </div>
+        <section class="footer-address">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+        </section>
+        <nav class="footer-navigation">
+          <ul>
+            <li>
+              <a href="#">ДОСТАВКА</a>
+            </li>
+            <li>
+              <a href="#">ГАРАНТИЯ</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="footer-phone">
+          Тел.: +7 (495) 495-95-95
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        </section>
+        <section class="footer-small-logo">
+          <img src="http://placehold.it/75x75" width="75" height="75" alt="">
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
