@@ -6,49 +6,106 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-logo">
-          <img src="img/logo.png" width="164" height="35" alt="device">
+    <div class="outside-container catalog-header clearfix">
+      <header class="header clearfix">
+        <div class="inside-container clearfix">
+          <div class="index-logo">
+            <img src="img/logo.png" width="164" height="35" alt="Device">
+          </div>
+          <div class="search">
+            <input type="text" name="search" value="" placeholder="Поиск по сайту">
+            <button class="btn" type="submit" hidden="true">Отправить</button>
+          </div>
+          <div class="user-block">
+            <a class="login" href="#">Вход</a>
+          </div>
+          <div class="items-block">
+            <a class="compare" href="#">Сравнить</a>
+            <a class="basket" href="#">Корзина</a>
+          </div>
+          <div class="catalog">
+            <a href="#">Каталог товаров</a>
+          </div>
+          <nav class="main-navigation">
+           <!--  <ul>
+              <li>
+                <a href="#">Доставка</a>
+              </li>
+              <li>
+                <a href="#">Гарантия</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul> -->
+          </nav>
         </div>
-        <div class="header-search">
-          <input type="text" name="search" value="" placeholder="Поиск по сайту">
-          <button class="btn" type="submit" hidden="true">Отправить</button>
+        <div class="catalog-menu clearfix">
+          <div class="catalog-menu-video">
+            <ul>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-menu-devise">
+            <ul>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-menu-techniks">
+            <ul>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="header-user-block">
-          <a class="login" href="#">Вход</a>
-        </div>
-        <div class="header-items-block">
-          <a class="compare" href="#">Сранить</a>
-          <a class="basket" href="#">Корзина</a>
-        </div>
-        <div class="header-catalog">
-          <a href="#">Каталог товаров</a>
-        </div>
-        <nav class="header-main-navigation">
+      </header>
+    </div>
+    <div class="outside-container">
+      <div class="breadcrumb">
+        <div class="inside-container">
+          <h1>Моноподы для селфи</h1>
           <ul>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Гарантия</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+            <li><a href="#">Главная</a></li>
+            <!-- <li><a href="#">Магазин</a></li>
+            <li>Средства для ухода</li> -->
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-    <main class="container">
-      <h1>Моноподы для селфи</h1>
-      <ul class="breadcrumb">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li>Средства для ухода</li>
-      </ul>
-      <section class="filter">
+    </div>
+    <div class="catalog-title">
+      <div class="filter-title-background"></div>
+      <div class="filter-title">
         <legend>Фильтр:</legend>
+      </div>
+      <div class="gallery-title">
+        <div class="gallery-sorting">
+          <legend>Сортировка:</legend>
+          <button class="btn btn-sort" type="button">По цене</button>
+          <button class="btn btn-sort" type="button">По типу</button>
+          <button class="btn btn-sort" type="button">По популярности</button>
+          <button class="btn btn-sort" type="button">Вверх</button>
+          <button class="btn btn-sort" type="button">Вниз</button>
+        </div>
+      </div> 
+      <div class="gallery-title-background"></div>    
+    </div>
+    <div class="catalog-content">
+      <div class="filter-content-background"></div>
+      <section class="filter-content">
         <div class="filter-value">
           <label for="value-range" class='filter-title'>Стоимость</label>
           <input type="range" id="value-range" min="0" max="5000" step="1000" value="2000">
@@ -74,15 +131,7 @@
           <input type="radio" name="bluetooth" value="bluetooth-false" id="bluetooth-false">
         </div>          
       </section>
-      <section class="gallery">
-        <div class="gallery-sorting">
-          <legend>Сортировка:</legend>
-          <button class="btn btn-sort" type="button">По цене</button>
-          <button class="btn btn-sort" type="button">По типу</button>
-          <button class="btn btn-sort" type="button">По популярности</button>
-          <button class="btn btn-sort" type="button">Вверх</button>
-          <button class="btn btn-sort" type="button">Вниз</button>
-        </div>
+      <section class="gallery-content">
         <div class="gallery-item">
           <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           <a href="#">Любительская селфи-палка</a>
@@ -105,17 +154,18 @@
         </div>
         <div class="gallery-pagination">
           <button class="btn btn-pagination" type="button">Назад</button>
-          <ul class="pagination-list">
+          <!-- <ul class="pagination-list">
             <li><a href="#" class="active">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
           </ul>
-          <button class="btn btn-pagination" type="button">Вперед</button>
+          <button class="btn btn-pagination" type="button">Вперед</button> -->
         </div>
-      </section>     
-    </main>
-    <footer class="footer">
-      <div class="container">
+      </section> 
+      <div class="gallery-content-background"></div>  
+    </div>
+    <footer class="main-footer clearfix">
+      <div class="container clearfix">
         <div class="footer-logo">
           <img src="img/logo.png" width="164" height="35" alt="device">
         </div>
